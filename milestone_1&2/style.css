@@ -1,0 +1,85 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 150px;
+    background: #f4f4f4;
+}
+.resume-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10%;
+    box-shadow: 0 0 20px black(0,0,0,0.1);
+}
+.left-section{
+    background: #2c2c2c;
+    color: white;
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+    border-right: 5px solid rgb(228, 107, 107);
+
+}
+h1{
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+    margin-bottom: 30px;
+}
+ul{
+    list-style-type: fill round;
+    padding: 10px;
+    margin: 10px 0;
+}
+ul li{
+    margin: 5px 0;
+}
+.right-section{
+    padding: 20px;
+    width: 65%;
+}
+button{
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 15px black;
+}
+button:hover{
+    background-color: rgb(218, 89, 89);
+}
+
+
+.profile-pic{
+    width: 150px;
+    height: 150px;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 5x solid red;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15x red;
+
+}
+h3{
+    font-size: 18px;
+    padding: 2%;
+    color: black;
+    border: 10%;
+    box-shadow: 0 0 15x red;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#heading3{
+    color: whitesmoke;
+    margin-top: 40x;
+}
+#skills {
+    display: none;
+  }
+  
+  #skills.visible {
+    display: block;
+  }
