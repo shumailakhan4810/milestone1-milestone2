@@ -1,0 +1,102 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #050b62;
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    /* background: #fff; */
+    background-image: url("https://wallpapers.com/images/hd/purple-and-blue-themes-eel9tbhgx31w3zcr.jpg");
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    color: #444;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+   
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: #2197e6;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #cd1e89;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cd2177;
+}
+
+/* Dynamic Resume Section */
+#resume-display {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* making the resume editable */
+    outline: none;
+}
+
+#resume-display h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
