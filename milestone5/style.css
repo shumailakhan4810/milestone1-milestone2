@@ -1,0 +1,52 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #41db1a;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #60e115;
+}
+
+/* Form styling */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 2px solid #63ed28;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #fafafa;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #74d520;
+}
+
+label {
+    font-size: 1em;
+    font-weight: bold;
+    color: #ab3d0e;
+    margin-top :10px}
+
+::placeholder {
+        font-size: 1em;
+        font-weight: bold;
+        color: #ab3d0e;
+        margin-top :10px}
+    
