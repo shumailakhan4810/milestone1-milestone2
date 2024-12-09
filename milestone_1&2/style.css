@@ -1,4 +1,4 @@
-body{
+/* body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 150px;
@@ -82,4 +82,199 @@ h3{
   
   #skills.visible {
     display: block;
-  }
+  } */
+
+
+
+
+
+  /* Base Styling */
+
+/* Base Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+.resume-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.left-section {
+    background: #2c2c2c;
+    color: white;
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+    border-right: 5px solid rgb(138, 102, 102);
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: fill round;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.right-section {
+    padding: 20px;
+    width: 65%;
+}
+
+button {
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 15px black;
+}
+
+button:hover {
+    background-color: rgb(218, 89, 89);
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 5px solid rgb(192, 124, 124);
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px red;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 2%;
+    color: black;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* Adjustments for specific ID */
+#heading3 {
+    color: whitesmoke;
+    margin-top: 40px;
+}
+
+#skills {
+    display: none;
+}
+
+#skills.visible {
+    display: block;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet and mobile devices: screen widths between 768px and 1024px */
+@media (max-width: 1024px) {
+    .resume-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .left-section {
+        background-color: #060708;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+        margin-top: 10%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Mobile Devices: screen widths up to 768px */
+@media (max-width: 768px) {
+    .resume-container {
+        padding: 10px;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}
+
+/* For Small Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+    .resume-container {
+        padding: 10px;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .profile-pic {
+        width: 90px;
+        height: 90px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+}

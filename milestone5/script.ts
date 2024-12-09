@@ -90,5 +90,6 @@ if (downloadPdfButton) {
                 (document.getElementById('skills') as HTMLTextAreaElement).value = resumeData.skills;
             }
         }
+        
     });
 })

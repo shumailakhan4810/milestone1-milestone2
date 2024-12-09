@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Styling for the Resume Display Area */
+#resume-display {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center; /* Center align the text */
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#resume-display h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#resume-display h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#resume-display p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+#resume-display p b {
+    font-weight: bold;
+    color: #4285f4; /* Gives a Google Forms-like accent color */
+}
+
+/* Styling for Editable Fields */
+#resume-display span[contenteditable="true"] {
+    padding: 2px 4px;
+    border-bottom: 1px dashed #ddd;
+    cursor: pointer;
+    font-style: italic;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    #resume-display {
+        padding: 15px;
+    }
+
+    #resume-display h2 {
+        font-size: 1.6em;
+    }
+
+    #resume-display h3 {
+        font-size: 1.3em;
+    }
+    
+    #resume-display p {
+        font-size: 0.9em;
+    }
+}
+
+</style>
+<body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <h1>Dynamic Resume Builder</h1>
+    <form id="resume-form">
+        <fieldset>
+            <legend>
+                <B id="personal">Personal Information</B>
+            </legend>
+            <label for="username">Username:</label><br>
+            <input type="text" name="username" id="username" placeholder="Enter your username" required><br>
+
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required><br>
+
+            <label for="phone">Phone:</label><br>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education:</label><br>
+            <textarea name="education" id="education" placeholder="Enter your education" rows="4" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience:</label><br>
+            <textarea name="experience" id="experience" placeholder="Enter your work experience" rows="4" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills:</label><br>
+            <textarea name="skills" id="skills" placeholder="Enter your skills" rows="4" required></textarea>
+        </fieldset>
+
+        <button type="submit">Generate Resume</button>
+    </form>
+
+    <br>
+    <!-- Dynamic Resume -->
+    <div id="resume-display">
+        <!-- Resume will be displayed below -->
+    </div>
+
+    <!-- section for the shareable link and download option -->
+    <div id="shareable-link-container" style="display: none;">
+        <h2>Shareable Link</h2>
+        <p>Here is your unique link to view and edit your resume:</p>
+        <a href="#" id="shareable-link" target="_blank" ></a>
+        <br>
+        <!-- <button id="download-pdf"><b>Download As Pdf</b></button> -->
+       <input id ="download-pdf" type="submit" value="Download As Pdf">
+        
+    </div>
+
+    <script src="./script.js"></script>
+    </div>
+</body>
+</html>

@@ -10,6 +10,9 @@ h1 {
     text-align: center;
     color: #050b62;
 }
+h1:hover{
+    color: #cd1e89;
+}
 
 /* Form Styling */
 form {

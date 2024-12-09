@@ -2,20 +2,21 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/seasonal-leaf_WXREXGYBC6.jpg");
     margin: 0;
     padding: 20px;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #e7dddd;
 }
 
 /* Form Styling */
 form {
     max-width: 600px;
     margin: 0 auto;
-    background: #fff;
+    background: #351818;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -57,7 +58,7 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
-    border-color: #ee57aa;
+    border-color: #88363c;
     outline: none;
 }
 
@@ -70,7 +71,7 @@ button {
     width: 100%;
     padding: 12px;
     font-size: 18px;
-    background-color: #cd1e89;
+    background-color: #aa3e47;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -81,7 +82,7 @@ button:hover {
     background-color: #cd2177;
 }
 
-/* Dynamic Resume Section */
+Dynamic Resume Section */
 #resume-display {
     max-width: 600px;
     margin: 20px auto;
@@ -94,5 +95,50 @@ button:hover {
 #resume-display h2 {
     text-align: center;
     margin-top: 0;
+} 
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    form,
+    #resume-display {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
 }
 
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    form,
+    #resume-display {
+        padding: 10px;
+    }
+
+    label,
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    button {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px;
+    }
+}
